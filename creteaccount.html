@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="css%20files/css_tp copy.css">
+    <script src="js files/js_tp.js"></script>
+    
+    <title>Quicode.tn Create Account</title>
+</head>
+<body>
+    <form class="main">
+        <div class="names">
+            <br>
+            <br>
+            <input placeholder="Your Name" type="text"  autofocus>
+            <input placeholder="Your Family Name" type="text">
+        </div>
+
+        <div class="birthday_date">
+                <input placeholder="DD" type="text" maxlength="2"   >
+                <input placeholder="MM" type="text" maxlength="2"  >
+                <input placeholder="YYYY" type="text" maxlength="4">
+        </div>
+        
+        <div class="email-password">
+            <input type="text" placeholder="Your Email Here" autocomplete="email">
+            <br>
+            <br>
+            <input type="password" class="password" autocomplete="new-password" placeholder="Secret Password" id="password">
+            <button type="button" class="security" onclick=security_button0(document.getElementById("img_security0"),document.getElementById("password"))><img src="img/lock-fill.svg" class="login_" id="img_security0"></button>
+            <br>
+            <br>
+            <input type="password" class="password" placeholder="Confirm Password" id="cpassword">
+            <button type="button" class="security" onclick=security_button0(document.getElementById("img_security1"),document.getElementById("cpassword"))><img src="img/lock-fill.svg" id="img_security1" class="login_"></button>
+
+        <div class="login-links">
+            <br>
+            <button class="login_button" type="submit">Sign Up</button>
+            <p class="links">Have an account:<a class="links" href="html files/loginhome.html">Log in Now!</a></p>
+        </div>
+    </form>
+</body>
+</html>
